@@ -76,9 +76,7 @@ function image_processing_tool
     originalImage = [];
 
 
-    % ---------------------------------------------------------
     % Load Image
-    % ---------------------------------------------------------
     function loadImage(~, ~)
 
         [file, path] = uigetfile( ...
@@ -107,10 +105,8 @@ function image_processing_tool
 
     end
 
-
-    % ---------------------------------------------------------
     % Enhance Image
-    % ---------------------------------------------------------
+ 
     function enhanceImage(~, ~)
 
         if isempty(originalImage)
@@ -134,10 +130,8 @@ function image_processing_tool
 
     end
 
-
-    % ---------------------------------------------------------
     % Apply Filter
-    % ---------------------------------------------------------
+  
     function filterImage(~, ~)
 
         if isempty(originalImage)
@@ -162,9 +156,8 @@ function image_processing_tool
     end
 
 
-    % ---------------------------------------------------------
     % Detect Edges
-    % ---------------------------------------------------------
+    
     function detectEdges(~, ~)
 
         if isempty(originalImage)
@@ -188,10 +181,8 @@ function image_processing_tool
 
     end
 
-
-    % ---------------------------------------------------------
     % Reset
-    % ---------------------------------------------------------
+    
     function resetImage(~, ~)
 
         if isempty(originalImage)
